@@ -76,7 +76,7 @@ These can be accessed using the object literal syntax; eg styles['delete'] inste
     }
     if (cssModuleDefinition.trim() === '') {
       // Ensure empty CSS modules export something
-      cssModuleDefinition = 'export {};\n';
+      cssModuleDefinition = 'export {}\n';
     }
     if (query.banner) {
       // Prefix banner to CSS module

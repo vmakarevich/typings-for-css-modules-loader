@@ -8,13 +8,13 @@ const filenameToInterfaceName = (filename) => {
 
 const cssModuleToTypescriptInterfaceProperties = (cssModuleKeys, indent = '  ') => {
   return cssModuleKeys
-    .map((key) => `${indent}'${key}': string;`)
+    .map((key) => `${indent}'${key}': string`)
     .join('\n');
 };
 
 const cssModuleToNamedExports = (cssModuleKeys) => {
   return cssModuleKeys
-    .map((key) => `export const ${key}: string;`)
+    .map((key) => `export const ${key}: string`)
     .join('\n');
 };
 
@@ -94,6 +94,6 @@ export const generateGenericExportInterface = (cssModuleKeys, filename, indent) 
 ${interfaceProperties}
 }
 
-export const locals: ${interfaceName};
+export const locals: ${interfaceName}
 `);
 };
